@@ -4,9 +4,9 @@
 #include "stm32f10x.h"
 #include "Delay.h"
 
-#define BEEP_GPIO_PORT 		  GPIOB
-#define BEEP_GPIO_CLK 			RCC_APB2Periph_GPIOB
-#define BEEP_GPIO_PIN 			GPIO_Pin_5
+#define BEEP_GPIO_PORT 		  GPIOC
+#define BEEP_GPIO_CLK 			RCC_APB2Periph_GPIOC
+#define BEEP_GPIO_PIN 			GPIO_Pin_13
 
 void BEEP_GPIO_Config(void);
 void beep_on(void);
