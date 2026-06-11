@@ -1,30 +1,99 @@
-# Keil build output
-Output/*.o
-Output/*.d
-Output/*.crf
-Output/*.elf
-Output/*.lnp
-Output/*.hex
-Output/*.htm
-Output/*.axf
-Output/*.dep
-Output/*.ExtDll*
-Output/*.ExtSfv*
-Output/*.ExtScvd*
-Output/JLink*
-Output/Project*
+# =============================================
+# STM32F103ZET6 项目 - Git忽略规则
+# =============================================
 
-# Keil listing
+# ========== Keil 编译输出 ==========
+Output/
+*.o
+*.d
+*.crf
+*.elf
+*.lnp
+*.hex
+*.htm
+*.axf
+*.dep
+*.ExtDll*
+*.ExtSfv*
+*.ExtScvd*
+JLink*
+*.map
+*.lst
+*.sct
+*.lib
 
+# ========== Keil 工程文件 ==========
+*.uvguix.*
+*.uvoptx
+*.uvproj
+*.uvprojx
 
-# IDE / Editor
+# ========== Keil Listing ==========
+Listing/
+*.lst
+*.map
+
+# ========== IDE / Editor ==========
 .vscode/
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
 Thumbs.db
 
+# ========== Doc 目录（大型参考资料）============
+# 排除所有PDF文档
+*.pdf
+Doc/**/*.pdf
+Doc/**/**/*.pdf
 
+# 排除Excel文件
+*.xls
+*.xlsx
+Doc/**/*.xls
+Doc/**/*.xlsx
+
+# 排除封装库文件
+*.p
+Doc/**/*.p
+
+# 排除参考项目（已跑通的项目，可单独clone）
+Doc/参考项目/
+
+# 排除野火配套例程（太大，可单独获取）
+Doc/1-书籍配套例程-F103ZE霸道V1V2_20240202/
+
+# 排除江协科技资料（可单独获取）
+Doc/b站江协科技/
+
+# ========== 保留的重要文档 ==========
+# 以下文件会被上传
+!Doc/野火霸道板V1开发指南.md
+!Doc/项目开发笔记.md
+!Doc/资料分析/
+
+# ========== 日志文件 ==========
+*.log
+*.tmp
+*.bak
+
+# ========== 编译脚本 ==========
+*.bat
+*.cmd
+build.ps1
+
+# ========== 用户代码区 ==========
+# 保留注释的原始代码
+*.orig
+*.rej
+
+# ========== Windows ==========
+[Tt]humbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ========== Temp Files ==========
+*.temp
+*.cache
+*.tmp

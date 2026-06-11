@@ -1,0 +1,12 @@
+tree bd24f529d6fb5e8cf3f50d2a7fe53c4fa6dbac25
+author Caffeine0 <caffeine0@github.com> 1781190457 +0800
+committer Caffeine0 <caffeine0@github.com> 1781190457 +0800
+
+feat: initial commit - STM32F103C8 IoT environmental monitoring device
+
+- Core: STM32F103C8 (Cortex-M3) with CMSIS + Standard Peripheral Library
+- Sensors: DHT11 (temp/humidity), ADC (MQ-2/MQ-7 gas), DS1302 (RTC), HC-SR501 (PIR)
+- Display: 0.96" OLED (I2C)
+- Actuators: PWM LED (breathing mode), BEEP alarm
+- Networking: ESP8266 Wi-Fi + MQTT + OneNET cloud platform
+- Controls: GPIO key scanning, key EXTI

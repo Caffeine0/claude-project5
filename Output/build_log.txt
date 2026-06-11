@@ -1,4 +1,0 @@
-*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\studySoft\KEIL\ARM\ARMCC\Bin'
-Build target 'Target 1'
-"..\Output\C8T6 Proj.axf" - 0 Error(s), 0 Warning(s).
-Build Time Elapsed:  00:00:04
