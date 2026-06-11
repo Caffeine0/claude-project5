@@ -15,8 +15,7 @@ Output/JLink*
 Output/Project*
 
 # Keil listing
-Listing/*.lst
-Listing/*.map
+
 
 # IDE / Editor
 .vscode/
@@ -28,7 +27,4 @@ Listing/*.map
 .DS_Store
 Thumbs.db
 
-# Keil project user configs
-*.uvoptx
-*.uvprojx.User
-*.uvopt
+
